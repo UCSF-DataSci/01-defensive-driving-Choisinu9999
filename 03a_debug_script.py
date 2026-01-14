@@ -12,8 +12,7 @@ Add comments explaining each fix when you're done.
 def calculate_bmi(weight_kg, height_cm):
     """Calculate BMI from weight (kg) and height (cm)."""
     height_m = height_cm / 100
-    bmi = weight_kg / (height_m**2) # # BUG 1: Used weight/height instead of weight/(height**2)
-# FIX: Added exponent for correct BMI formula
+    bmi = weight_kg / (height_m ** 2) # FIX: Added exponent for correct BMI formula
     return bmi
 def get_risk_level(bmi):
     """Determine health risk level based on BMI."""
